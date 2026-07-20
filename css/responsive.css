@@ -1,0 +1,399 @@
+/*RESPONSIVE.CSS
+Version 1.1*/
+
+
+/* ===========================
+1200px
+=========================== */
+
+
+/* ===========================
+992px
+=========================== */
+
+
+/* ===========================
+768px
+=========================== */
+
+
+/* ===========================
+576px
+=========================== */
+
+
+/* ==========================================================
+1200px
+========================================================== */
+
+@media (max-width:1200px){
+    .container{
+        width:min(92%,1200px);
+    }
+
+    .hero-grid{
+        gap:60px;
+    }
+    .challenge-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:28px;
+    }
+    .insights-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:28px;
+    }
+    .about-grid{
+        gap:60px;
+    }
+    .contact-grid{
+        gap:60px;
+    }
+    .footer-grid{
+        gap:40px;
+    }
+}
+
+/*992px*/
+@media (max-width:992px){
+    section{
+        padding:100px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-content{
+        max-width:700px;
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-industries{
+        justify-content:center;
+    }
+
+    .hero-image{
+        max-width:600px;
+        margin:auto;
+    }
+
+    .challenge-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .insights-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .capability{
+        grid-template-columns:1fr;
+    }
+
+    .experience-item{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .markets-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/*768px*/
+@media (max-width:768px){
+    :root{
+        --section-padding:80px;
+    }
+
+    .container{
+        width:min(94%,100%);
+    }
+
+/*HEADER*/
+    .header{
+        height:auto;
+        position: absolute;
+    }
+
+    .header-container{
+        height:80px;
+    }
+
+    .nav{
+        position:fixed;
+        top:80px;
+        left:-100%;
+        width:100%;
+        height:calc(100vh - 80px);
+        background:var(--color-white);
+        transition:left .35s ease;
+        padding:50px 40px;
+        z-index:999;
+    }
+
+    .nav.active{
+        left:0;
+    }
+
+    .nav-list{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:30px;
+    }
+
+    .header-actions{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    /*HERO*/
+    .hero{
+        min-height:auto;
+        /*padding-top:140px;*/
+        padding-top: 88px;
+        padding-bottom:80px;
+    }
+
+    .hero-grid{
+        gap:50px;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        max-width:320px;
+    }
+
+    .hero-industries{
+        justify-content:center;
+        row-gap:14px;
+    }
+
+    .hero-image img{
+        max-width:520px;
+        margin:auto;
+    }
+
+    /*SECTION HEADER*/
+    .section-header{
+        text-align:center;
+    }
+
+    /*BUSINESS CHALLENGES*/
+    .challenge-grid{
+        grid-template-columns:1fr;
+    }
+
+    /*INSIGHTS*/
+    .insights-grid{
+        grid-template-columns:1fr;
+    }
+
+    /*CAPABILITIES*/
+    .capability{
+        gap:50px;
+    }
+
+    .capability-image img{
+        height:360px;
+    }
+
+    /*EXPERIENCE*/
+    .experience-item{
+        gap:50px;
+    }
+
+    .experience-image img{
+        height:360px;
+    }
+
+    /*ABOUT*/
+    .about-grid{
+        gap:60px;
+    }
+
+    .about-image img{
+        height:520px;
+    }
+
+    .about-highlights{
+        grid-template-columns:1fr;
+    }
+
+    /*CONTACT*/
+    .contact-form{
+        padding:32px;
+    }
+
+    /*FOOTER*/
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-brand p{
+        max-width:none;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .markets-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*576px*/
+@media (max-width:576px){
+    html{
+        font-size:15px;
+    }
+    .container{
+        width:92%;
+    }
+
+    .brand{
+        gap:10px;
+    }
+
+    .brand-mark{
+        width:42px;
+        height:42px;
+        font-size:1rem;
+    }
+
+    .brand-tagline{
+        display:none;
+    }
+
+    .nav{
+        top:72px;
+        height:calc(100vh - 72px);
+        padding:35px 25px;
+    }
+
+    /*HERO*/
+    .hero{
+        padding-top:120px;
+        padding-bottom:70px;
+    }
+
+    .hero-content h1{
+        margin-bottom:20px;
+    }
+
+    .hero-content h2{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .hero-buttons{
+        gap:16px;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .hero-image img{
+        border-radius:var(--radius-lg);
+    }
+
+    /*SECTIONS*/
+    section{
+        padding:80px 0;
+    }
+
+    .section-header{
+        margin-bottom:50px;
+    }
+
+    /*CARDS*/
+    .challenge-content,
+    .insight-content{
+        padding:28px;
+    }
+
+    /*CAPABILITIES*/
+    .capability{
+        margin-top:80px;
+    }
+
+    .capability-image img{
+        height:280px;
+    }
+
+    /*EXPERIENCE*/
+    .experience-item{
+        margin-top:80px;
+    }
+
+    .experience-image img{
+        height:280px;
+    }
+
+    /*ABOUT*/
+    .about-image img{
+        height:380px;
+    }
+
+    .highlight{
+        padding:22px;
+    }
+
+    .highlight .number{
+        font-size:2rem;
+    }
+
+    /*CONTACT*/
+    .contact-form{
+        padding:24px;
+    }
+
+    .contact-social{
+        flex-direction:column;
+    }
+
+    .contact-social a{
+        width:100%;
+    }
+
+    /*FOOTER*/
+    .footer{
+        padding:60px 0 24px;
+    }
+
+    .footer-grid{
+        gap:40px;
+    }
+}

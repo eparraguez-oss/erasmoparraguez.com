@@ -1,0 +1,178 @@
+/*BOX MODEL*/
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/*HTML */
+html{
+    font-size:16px;
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+/*BODY*/
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+}
+
+/*MEDIA */
+img,
+picture,
+video,
+canvas,
+svg{
+    display:block;
+    max-width:100%;
+}
+
+/*FORM ELEMENTS*/
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    color:inherit;
+    background:none;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input,
+textarea,
+select{
+    outline:none;
+}
+
+
+/*LINKS*/
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/*LISTS*/
+ul,
+ol{
+    list-style:none;
+}
+
+/*TABLES*/
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+/*HEADINGS*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size:inherit;
+    font-weight:inherit;
+}
+
+/*PARAGRAPHS*/
+p{
+    overflow-wrap:break-word;
+}
+
+/*HR*/
+hr{
+    border:0;
+    border-top:1px solid #e5e7eb;
+}
+
+/*QUOTES*/
+blockquote,
+q{
+    quotes:none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after{
+    content:"";
+}
+
+/*CODE*/
+pre,
+code,
+kbd,
+samp{
+    font-family:Consolas, Monaco, monospace;
+}
+
+/*DISABLED*/
+:disabled{
+    cursor:not-allowed;
+}
+
+/*HIDDEN*/
+[hidden]{
+    display:none !important;
+}
+
+/*SELECTION*/
+::selection{
+    background:var(--color-accent);
+    color:var(--color-white);
+}
+
+/*SCROLLBAR (WebKit)*/
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--color-background-alt);
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--color-accent);
+    border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--color-accent-hover);
+}
+
+/*FOCUS*/
+:focus-visible{
+    outline:3px solid var(--color-accent);
+    outline-offset:3px;
+}
+
+/*REDUCED MOTION*/
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior:auto;
+    }
+    *,
+    *::before,
+    *::after{
+        animation-duration:0.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:0.01ms !important;
+        scroll-behavior:auto !important;
+    }
+}

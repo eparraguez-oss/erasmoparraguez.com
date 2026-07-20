@@ -1,78 +1,46 @@
 'use strict';
 
 /*REDUCED MOTION*/
-
 const reduceMotion = window.matchMedia(
     '(prefers-reduced-motion: reduce)'
 ).matches;
 
 if (reduceMotion) {
-
     document.documentElement.classList.add('reduced-motion');
-
 }
 
-/* ==========================================================
-   REVEAL ELEMENTS
-========================================================== */
-
+/*REVEAL ELEMENTS*/
 const revealElements = document.querySelectorAll(
-
     '.section-header,' +
-
     '.challenge-card,' +
-
     '.capability,' +
-
     '.experience-item,' +
-
     '.insight-card,' +
-
     '.about-image,' +
-
     '.about-content,' +
-
     '.contact-information,' +
-
     '.contact-form,' +
-
     '.footer'
-
 );
 
 /*INTERSECTION OBSERVER*/
 const revealObserver = new IntersectionObserver(
-
     (entries)=>{
-
         entries.forEach(entry=>{
-
             if(entry.isIntersecting){
-
                 entry.target.classList.add('visible');
-
                 revealObserver.unobserve(entry.target);
-
             }
-
         });
-
     },
-
     {
-
         threshold:.15,
-
         rootMargin:"0px 0px -60px 0px"
-
     }
-
 );
 
 revealElements.forEach(element=>{
-
     revealObserver.observe(element);
-
 });
 
 /* HERO PARALLAX*/
@@ -91,10 +59,7 @@ window.addEventListener(
     {passive:true}
 );
 
-/* ==========================================================
-   COUNTERS
-========================================================== */
-
+/*COUNTERS*/
 const counters = document.querySelectorAll('.highlight .number');
 const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -129,9 +94,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 });
 
 counters.forEach(counter => {
-
     counterObserver.observe(counter);
-
 });
 
 /*INIT*/

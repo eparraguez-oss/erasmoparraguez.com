@@ -18,7 +18,7 @@ if (form) {
 
         try {
 
-            const response = await fetch("TU_URL_APPS_SCRIPT", {
+            const response = await fetch("https://script.google.com/a/macros/erasmoparraguez.com/s/AKfycbxvChJ8jTntV_1kYvdEsdrjk3kn9PwQWYVZHx2GyS-s6frgbZ7uKY_PcqSR4mIMNR73pQ/exec", {
 
                 method: "POST",
 

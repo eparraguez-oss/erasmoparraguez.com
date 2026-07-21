@@ -61,10 +61,11 @@ Version 1.1*/
     color:var(--color-accent);
 }
 
-.hero-image{
-    position:relative;
-    display: flex;
-    justify-content: center;
+.hero-image img{
+    width:100%;
+    max-width:460px;
+    border-radius:var(--radius-xl);
+    box-shadow:var(--shadow-xl);
 }
 
 .hero-image img{

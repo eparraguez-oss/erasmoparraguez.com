@@ -173,9 +173,12 @@ Version 1.1*/
 }
 
 .hero-image img{
-    max-width:340px;
+    max-width:280px;
     margin:auto;
 }
+
+.menu-toggle{
+    margin-left:16px;
 
 /* HEADER */
 
@@ -193,8 +196,6 @@ Version 1.1*/
     display:none;
 }
 
-.menu-toggle{
-    margin-left:16px;
 }
 
 /*BUSINESS CHALLENGES*/

@@ -144,19 +144,14 @@ Version 1.1*/
         gap:30px;
     }
 
-    .header-actions{
-        display:none;
-    }
-
     .menu-toggle{
         display:flex;
     }
 
 /* HERO */
-
 .hero{
     min-height:auto;
-    padding-top:145px;
+    padding-top:125px;
     padding-bottom:80px;
 }
 
@@ -190,10 +185,16 @@ Version 1.1*/
 
 .header-actions{
     display:flex;
+    align-items:center;
+    gap:10px
 }
 
-.header-actions .btn{
+.header-actions .btn-primary{
     display:none;
+}
+
+.menu-toggle{
+    margin-left:16px;
 }
 
 /*BUSINESS CHALLENGES*/

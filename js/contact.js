@@ -37,8 +37,7 @@ if (form) {
 
             const result = await response.json();
 
-            if (result.result === "success") {
-
+            /*if (result.result === "success") {
                 status.textContent =
                     "✓ Thank you! Your message has been sent.";
 
@@ -54,7 +53,31 @@ if (form) {
 
                 status.className =
                     "form-status error";
-            }
+            }*/
+
+        console.log(result);
+
+        if (result.result === "success") {
+        
+            status.textContent =
+                "✓ Thank you! Your message has been sent.";
+        
+            status.className =
+                "form-status success";
+        
+            form.reset();
+        
+        } else {
+        
+            status.textContent =
+                result.message;
+        
+            status.className =
+                "form-status error";
+        
+            console.error(result);
+        
+        }
 
         } catch (error) {
 

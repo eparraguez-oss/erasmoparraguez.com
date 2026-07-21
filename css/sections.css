@@ -855,3 +855,19 @@ Version 1.1*/
     height:2px;
     background:linear-gradient(90deg, var(--color-accent),transparent);
 }
+
+.form-status{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+    min-height:24px;
+}
+
+/*FORM*/
+.form-status.success{
+    color:#16a34a;
+}
+
+.form-status.error{
+    color:#dc2626;
+}

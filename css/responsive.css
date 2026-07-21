@@ -169,8 +169,7 @@ Version 1.1*/
     /*HERO*/
     .hero{
         min-height:auto;
-        /*padding-top:140px;*/
-        padding-top: 88px;
+        padding-top:140px;
         padding-bottom:80px;
     }
 

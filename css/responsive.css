@@ -152,47 +152,51 @@ Version 1.1*/
         display:flex;
     }
 
-    /*HERO*/
-    .hero{
-        min-height:auto;
-        padding-top:150px;
-        padding-bottom:80px;
-    }
+/* HERO */
 
-    .hero-grid{
-        gap:50px;
-    }
+.hero{
+    min-height:auto;
+    padding-top:145px;
+    padding-bottom:80px;
+}
 
-    .hero-content{
-        text-align:center;
-    }
+.hero-content{
+    text-align:center;
+}
 
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
+.hero-content h1{
+    font-size:3rem;
+    line-height:1.08;
+}
 
-    .hero-buttons .btn{
-        width:100%;
-        max-width:320px;
-    }
+.hero-content h2{
+    font-size:1.05rem;
+}
 
-    .hero-industries{
-        justify-content:center;
-        row-gap:14px;
-    }
+.hero-content p{
+    font-size:1rem;
+}
 
-    .hero-image img{
-        max-width:520px;
-        margin:auto;
-    }
+.hero-image img{
+    max-width:340px;
+    margin:auto;
+}
 
-    /*SECTION HEADER*/
-    .section-header{
-        text-align:center;
-    }
+/* HEADER */
 
-    /*BUSINESS CHALLENGES*/
+.header{
+    position:fixed;
+}
+
+.header-actions{
+    display:flex;
+}
+
+.header-actions .btn{
+    display:none;
+}
+
+/*BUSINESS CHALLENGES*/
     .challenge-grid{
         grid-template-columns:1fr;
     }

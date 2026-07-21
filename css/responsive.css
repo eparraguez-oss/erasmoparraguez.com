@@ -14,7 +14,7 @@ Version 1.1*/
 
 @media (max-width:1200px){
     .container{
-        width:min(92%,1200px);
+        width:92%;
         margin:0 auto;
     }
 

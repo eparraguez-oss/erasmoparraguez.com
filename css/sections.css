@@ -68,12 +68,6 @@ Version 1.1*/
     box-shadow:var(--shadow-xl);
 }
 
-.hero-image img{
-    width:100%;
-    border-radius:var(--radius-xl);
-    box-shadow:var(--shadow-xl);
-}
-
 /*BUSINESS CHALLENGES*/
 .business-challenges{
     background:var(--color-background-alt);

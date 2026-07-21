@@ -1,12 +1,15 @@
 'use strict';
 
 const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
 
 if (form) {
 
     form.addEventListener('submit', async function (e) {
 
         e.preventDefault();
+
+        status.textContent = "";
 
         const data = {
             name: document.getElementById('name').value.trim(),
@@ -16,35 +19,57 @@ if (form) {
             source: "Website"
         };
 
+        const button = form.querySelector("button[type='submit']");
+        const originalText = button.innerHTML;
+
+        button.disabled = true;
+        button.innerHTML = "Sending...";
+
         try {
 
-            const response = await fetch("https://script.google.com/a/macros/erasmoparraguez.com/s/AKfycbxvChJ8jTntV_1kYvdEsdrjk3kn9PwQWYVZHx2GyS-s6frgbZ7uKY_PcqSR4mIMNR73pQ/exec", {
-
-                method: "POST",
-
-                body: JSON.stringify(data)
-
-            });
+            const response = await fetch(
+                "https://script.google.com/a/macros/erasmoparraguez.com/s/AKfycbxvChJ8jTntV_1kYvdEsdrjk3kn9PwQWYVZHx2GyS-s6frgbZ7uKY_PcqSR4mIMNR73pQ/exec",
+                {
+                    method: "POST",
+                    body: JSON.stringify(data)
+                }
+            );
 
             const result = await response.json();
 
             if (result.result === "success") {
 
-                alert("Thank you! Your message has been sent.");
+                status.textContent =
+                    "✓ Thank you! Your message has been sent.";
+
+                status.className =
+                    "form-status success";
 
                 form.reset();
 
             } else {
 
-                alert("There was an error sending your message.");
+                status.textContent =
+                    "Unable to send your message.";
 
+                status.className =
+                    "form-status error";
             }
 
         } catch (error) {
 
             console.error(error);
 
-            alert("Connection error.");
+            status.textContent =
+                "Connection error.";
+
+            status.className =
+                "form-status error";
+
+        } finally {
+
+            button.disabled = false;
+            button.innerHTML = originalText;
 
         }
 

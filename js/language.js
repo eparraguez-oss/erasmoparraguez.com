@@ -11,8 +11,8 @@ const translations = {
         "hero-text":"Organizations increasingly face complex analytical challenges. Better decisions require more than technology. They require the right analytical approach.",
 
         "nav-solutions": "Solutions",
-        "nav-industries": "Markets, Industries & Research",
         "nav-experience": "Experience",
+        "nav-industries": "Markets, Industries & Research",
         
         /*"nav-insights": "Insights",*/
         "nav-about": "About Me",
@@ -235,11 +235,10 @@ const translations = {
         "hero-title": "Ayudando a las organizaciones a tomar mejores decisiones.",
         "hero-subtitle": "Inteligencia Artificial • Inteligencia para la Decisión • Analítica Cuantitativa",
         "hero-text": "Las organizaciones enfrentan desafíos analíticos cada vez más complejos. Las mejores decisiones requieren mucho más que tecnología. Requieren el enfoque analítico adecuado.",
-        
+
         "nav-solutions": "Soluciones",
-        "nav-industries": "Industrias",
         "nav-experience": "Experiencia",
-        "nav-insights": "Publicaciones",
+        "nav-industries": "Mercados, Sectores & Investigación",
         "nav-about": "Acerca de mi",
         "nav-contact": "Contacto",
         "schedule-meeting": "Agendar Reunión",

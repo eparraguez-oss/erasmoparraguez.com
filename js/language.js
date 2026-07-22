@@ -245,7 +245,7 @@ const translations = {
         "nav-contact": "Contacto",
         "schedule-meeting": "Agendar Reunión",
 
-        "download-cv": "Descargar CV",
+        "download-cv": "Descargar CV (PDF)",
         "industries-subtitle": "Servicios Financieros • Minería • Gobierno • Tecnología",
         
         /* BUSINESS CHALLENGES */

@@ -4,9 +4,7 @@ const form = document.getElementById('contactForm');
 const status = document.getElementById('formStatus');
 
 if (form) {
-
     form.addEventListener('submit', async function (e) {
-
         e.preventDefault();
 
         status.textContent = "";
@@ -26,76 +24,36 @@ if (form) {
         button.innerHTML = "Sending...";
 
         try {
-
             const response = await fetch(
                 "https://script.google.com/macros/s/AKfycbxvChJ8jTntV_1kYvdEsdrjk3kn9PwQWYVZHx2GyS-s6frgbZ7uKY_PcqSR4mIMNR73pQ/exec",
                 {
                     method: "POST",
+                    headers: {
+                        "Content-Type": "text/plain;charset=utf-8"
+                    },
                     body: JSON.stringify(data)
                 }
             );
 
             const result = await response.json();
 
-            /*if (result.result === "success") {
-                status.textContent =
-                    "✓ Thank you! Your message has been sent.";
-
-                status.className =
-                    "form-status success";
-
+            if (result.result === "success") {
+                status.textContent = "✓ Thank you! Your message has been sent.";
+                status.className = "form-status success";
                 form.reset();
-
             } else {
-
-                status.textContent =
-                    "Unable to send your message.";
-
-                status.className =
-                    "form-status error";
-            }*/
-
-        console.log(result);
-
-        if (result.result === "success") {
-        
-            status.textContent =
-                "✓ Thank you! Your message has been sent.";
-        
-            status.className =
-                "form-status success";
-        
-            form.reset();
-        
-        } else {
-        
-            status.textContent =
-                result.message;
-        
-            status.className =
-                "form-status error";
-        
-            console.error(result);
-        
-        }
+                status.textContent = result.message || "Unable to send your message.";
+                status.className = "form-status error";
+                console.error(result);
+            }
 
         } catch (error) {
-
-            console.error(error);
-
-            status.textContent =
-                "Connection error.";
-
-            status.className =
-                "form-status error";
-
+            console.error("Fetch Error:", error);
+            status.textContent = "Connection error.";
+            status.className = "form-status error";
         } finally {
-
             button.disabled = false;
             button.innerHTML = originalText;
-
         }
-
     });
-
 }

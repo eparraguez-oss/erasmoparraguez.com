@@ -19,7 +19,7 @@ const translations = {
         "nav-contact": "Contact",
         "schedule-meeting": "Schedule a Meeting",
         
-        "download-cv": "Download Resume (PDF)"
+        "download-cv": "Download Resume (PDF)",
         "industries-subtitle": "Financial Services • Mining • Government • Technology",
 
         /* BUSINESS CHALLENGES */
@@ -245,7 +245,7 @@ const translations = {
         "nav-contact": "Contacto",
         "schedule-meeting": "Agendar Reunión",
 
-        "download-cv": "Descargar CV"
+        "download-cv": "Descargar CV",
         "industries-subtitle": "Servicios Financieros • Minería • Gobierno • Tecnología",
         
         /* BUSINESS CHALLENGES */

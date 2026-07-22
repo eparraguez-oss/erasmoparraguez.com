@@ -229,7 +229,7 @@ const translations = {
         "footer-developed":"Designed, Developed & Powered by Erasmo Parraguez.",
     }, 
     es: {
-         "explore-solutions": "Explorar Soluciones",
+        "explore-solutions": "Explorar Soluciones",
         "schedule-meeting": "Agendar Reunión",
         "hero-eyebrow": "Inteligencia para la Toma de Decisiones",
         "hero-title": "Ayudando a las organizaciones a tomar mejores decisiones.",
@@ -239,11 +239,13 @@ const translations = {
         "nav-solutions": "Soluciones",
         "nav-experience": "Experiencia",
         "nav-industries": "Mercados, Sectores & Investigación",
+        
         "nav-about": "Acerca de mi",
         "nav-contact": "Contacto",
         "schedule-meeting": "Agendar Reunión",
 
         "industries-subtitle": "Servicios Financieros • Minería • Gobierno • Tecnología",
+        
         /* BUSINESS CHALLENGES */
         "challenge-card1-category": "SERVICIOS FINANCIEROS",
         "challenge-card1-title": "Riesgo de Crédito y Analítica de Portafolios",

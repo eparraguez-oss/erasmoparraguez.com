@@ -61,11 +61,74 @@ Version 1.1*/
     color:var(--color-accent);
 }
 
+.hero-image{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
 .hero-image img{
     width:100%;
-    max-width:460px;
     border-radius:var(--radius-xl);
     box-shadow:var(--shadow-xl);
+}
+
+/* ===== BRAND / LOGO ===== */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    flex-shrink: 0; /* Evita que se encoja */
+}
+
+.brand-logo {
+    height: 42px; /* Tamaño óptimo para header */
+    width: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity var(--transition-fast, 0.2s ease);
+}
+
+.brand:hover .brand-logo {
+    opacity: 0.85; /* Efecto hover sutil */
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-first {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+    color: #bfc3c4;
+    letter-spacing: -0.02em;
+    transition: color var(--transition-fast, 0.2s ease);
+}
+
+.brand-last {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+    color: #24A8BA;
+    letter-spacing: -0.02em;
+    transition: color var(--transition-fast, 0.2s ease);
+}
+
+.brand:hover .brand-first {
+    color: #6d7070;
+}
+
+.brand:hover .brand-last {
+    color: #085d63;
+}
+
+/* Si el logo tiene el nombre incluido, ocultamos el texto */
+.brand-logo-only .brand-text {
+    display: none;
 }
 
 /*BUSINESS CHALLENGES*/
@@ -849,20 +912,4 @@ Version 1.1*/
     width:70px;
     height:2px;
     background:linear-gradient(90deg, var(--color-accent),transparent);
-}
-
-.form-status{
-    margin-top:20px;
-    text-align:center;
-    font-weight:600;
-    min-height:24px;
-}
-
-/*FORM*/
-.form-status.success{
-    color:#16a34a;
-}
-
-.form-status.error{
-    color:#dc2626;
 }

@@ -2,20 +2,33 @@
 Version 1.1*/
 
 
-/*1200px*/
+/* ===========================
+1200px
+=========================== */
 
-/*992px*/
 
-/*768px*/
+/* ===========================
+992px
+=========================== */
 
-/*576px*/
 
-/*1200px*/
+/* ===========================
+768px
+=========================== */
+
+
+/* ===========================
+576px
+=========================== */
+
+
+/* ==========================================================
+1200px
+========================================================== */
 
 @media (max-width:1200px){
     .container{
-        width:92%;
-        margin:0 auto;
+        width:min(92%,1200px);
     }
 
     .hero-grid{
@@ -100,6 +113,19 @@ Version 1.1*/
     .markets-grid{
         grid-template-columns:repeat(2,1fr);
     }
+
+    @media (max-width: 1024px) {
+    .brand-logo {
+        height: 36px;
+    }
+    .brand-name {
+        font-size: 1rem;
+    }
+    .brand {
+        gap: 10px;
+    }
+}
+
 }
 
 /*768px*/
@@ -144,67 +170,70 @@ Version 1.1*/
         gap:30px;
     }
 
+    .header-actions{
+        display:none;
+    }
+
     .menu-toggle{
         display:flex;
     }
 
-/* HERO */
-.hero{
-    min-height:auto;
-    padding-top:125px;
-    padding-bottom:80px;
+    /*HERO*/
+    .hero{
+        min-height:auto;
+        /*padding-top:140px;*/
+        padding-top: 88px;
+        padding-bottom:80px;
+    }
+
+    .hero-grid{
+        gap:50px;
+    }
+
+    .hero-content{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        max-width:320px;
+    }
+
+    .hero-industries{
+        justify-content:center;
+        row-gap:14px;
+    }
+
+    .hero-image img{
+        max-width:520px;
+        margin:auto;
+    }
+
+    /*SECTION HEADER*/
+    .section-header{
+        text-align:center;
+    }
+
+
+@media (max-width: 768px) {
+    .brand-logo {
+        height: 32px;
+    }
+    /* En mobile, solo mostramos el logo (ocultamos el texto) */
+    .brand-text {
+        display: none;
+    }
+    .brand {
+        gap: 0;
+    }
 }
 
-.hero-content{
-    text-align:center;
-    padding-inline:4px;
-    box-sizing:border-box;
-}
-
-.hero-content h1{
-    font-size:2.6rem;
-    line-height:1.6;
-}
-
-.hero-content h2{
-    font-size:1.0rem;
-    line-height:1.6;
-}
-
-.hero-content p{
-    font-size:1rem;
-}
-
-.hero-image img{
-    max-width:280px;
-    margin:auto;
-}
-
-.menu-toggle{
-    margin-left:16px;
-
-/* HEADER */
-.brand-name{
-    display:none;
-}
-
-.header{
-    position:fixed;
-}
-
-.header-actions{
-    display:flex;
-    align-items:center;
-    gap:10px
-}
-
-.header-actions .btn-primary{
-    display:none;
-}
-
-}
-
-/*BUSINESS CHALLENGES*/
+    /*BUSINESS CHALLENGES*/
     .challenge-grid{
         grid-template-columns:1fr;
     }
@@ -306,9 +335,7 @@ Version 1.1*/
     }
 
     .hero-content h1{
-        font-size:2.3rem;
-        line-height:1.1;
-        margin-bottom:20px
+        margin-bottom:20px;
     }
 
     .hero-content h2{
@@ -391,6 +418,17 @@ Version 1.1*/
     .footer{
         padding:60px 0 24px;
     }
+
+    .footer-grid{
+        gap:40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        height: 28px;
+    }
+}
 
     .footer-grid{
         gap:40px;

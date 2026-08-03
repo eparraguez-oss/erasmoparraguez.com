@@ -16,7 +16,45 @@ if (form) {
             message: document.getElementById('message').value.trim(),
             source: "Website"
         };
+        const honeypot = document.getElementById("website").value;
+        if (honeypot !== "") {return;}
 
+        const elapsed = Date.now() - window.formLoadedTime;
+        if (elapsed < 4000){ status.textContent = "Please complete the form."; 
+                            status.className ="form-status error";
+                            return;
+                           }
+        if(data.name.length < 3){status.textContent = "Please enter your full name.";
+                                 status.className = "form-status error";
+                                 return;
+                                }
+        if(data.company.length < 2){status.textContent ="Please enter your organization.";
+                                    status.className ="form-status error";
+                                    return;
+                                   }
+        if(data.message.length < 25){status.textContent ="Please provide more details.";
+                                     status.className = "form-status error";
+                                     return;
+                                    }
+        if(/^[0-9 ]+$/.test(data.message)){status.textContent ="Invalid message.";
+                                           status.className ="form-status error";
+                                           return;
+                                          }
+
+        if(/http|https|www\./i.test(data.message)){status.textContent ="Links are not allowed.";
+                                                   status.className ="form-status error";
+                                                   return;
+                                                  }
+        if(/[bcdfghjklmnpqrstvwxyz]{5,}/i.test(data.name)){status.textContent ="Please enter a valid name.";
+                                                           status.className ="form-status error";
+                                                           return;
+                                                          }
+
+        if(/[bcdfghjklmnpqrstvwxyz]{5,}/i.test(data.name)){
+            status.textContent ="Please enter a valid name.";
+            status.className ="form-status error";
+            return;
+        }
         const button = form.querySelector("button[type='submit']");
         const originalText = button.innerHTML;
 

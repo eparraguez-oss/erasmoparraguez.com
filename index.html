@@ -735,7 +735,9 @@
                     <label for="message" data-lang="form-message"> Message </label>
                     <textarea id="message" class="form-control" data-lang-placeholder="placeholder-message" placeholder="Tell me about your project..."></textarea>
                 </div>
-
+                <div class="honeypot">
+                    <input type="text" id="website" autocomplete="off" tabindex="-1">
+                </div>
                 <button class="btn btn-primary w-100" type="submit" data-lang="form-button">Let's Talk</button>
                 <p id="formStatus" class="form-status"></p>
             </form>

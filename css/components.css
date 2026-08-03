@@ -888,11 +888,8 @@ select.form-control{
 }
 
 .header.scrolled{
-
     background:rgba(255,255,255,.97);
-
     backdrop-filter:blur(14px);
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 }
@@ -1016,6 +1013,13 @@ transition-delay:.3s;
 .reduced-motion *{
 animation:none !important;
 transition:none !important;
-
 scroll-behavior:auto !important;
+}
+
+.hp-field{
+    position:absolute;
+    left:-9999px;
+    top:-9999px;
+    opacity:0;
+    pointer-events:none;
 }

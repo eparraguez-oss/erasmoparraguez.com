@@ -873,7 +873,7 @@
 <!-- Inicialización de Swiper -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        // Inicialización del carrusel de Markets (3 columnas)
+        // Inicialización del carrusel de Markets
         const marketsSwiper = new Swiper('.markets-slider', {
             slidesPerView: 1,
             spaceBetween: 24,
@@ -902,7 +902,7 @@
             }
         });
 
-        // Re-renderizar iconos de Lucide por si se crearon dinámicamente
+        // Re-renderizar
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
         }

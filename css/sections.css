@@ -89,17 +89,6 @@
     box-shadow: var(--shadow-xl);
 }
 
-/* Global Spacing for standard sections */
-.business-challenges,
-.capabilities,
-.experience,
-.insights,
-.about,
-.contact,
-.markets {
-    padding: 120px 0;
-}
-
 
 /* ==========================================================================
    BRAND / LOGO

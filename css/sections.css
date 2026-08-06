@@ -353,11 +353,16 @@
     background: var(--color-background-alt);
 }
 
-.markets-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    margin-top: 50px;
+.markets-slider {
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.markets-slider .swiper-slide {
+    height: auto;
+    display: flex;
 }
 
 .market-card {
@@ -380,7 +385,7 @@
 
 .market-card .image-overlay {
     position: relative;
-    height: 200px;
+    height: 190px;
     overflow: hidden;
 }
 
@@ -457,6 +462,30 @@
     color: var(--color-accent);
     font-size: .80rem;
     font-weight: 600;
+}
+
+/* Botones de navegación del Carrusel */
+.markets-swiper-button-next,
+.markets-swiper-button-prev {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    background: var(--color-white);
+    color: var(--color-accent) !important;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.markets-swiper-button-next:hover,
+.markets-swiper-button-prev:hover {
+    background: var(--color-accent);
+    color: var(--color-white) !important;
+}
+
+.markets-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-accent) !important;
+    width: 22px !important;
+    border-radius: 6px !important;
 }
 
 /* ==========================================================================

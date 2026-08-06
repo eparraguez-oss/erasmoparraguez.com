@@ -11,20 +11,20 @@ const translations = {
         "hero-text":"Organizations increasingly face complex analytical challenges. Better decisions require more than technology. They require the right analytical approach.",
 
         "nav-solutions": "Solutions",
-        "nav-experience": "Experience",
         "nav-industries": "Markets, Industries & Research",
+        "nav-experience": "Experience",
         
         /*"nav-insights": "Insights",*/
         "nav-about": "About Me",
         "nav-contact": "Contact",
         "schedule-meeting": "Schedule a Meeting",
-        
+
         "download-cv": "Download Resume (PDF)",
         "industries-subtitle": "Financial Services • Mining • Government • Technology",
 
         /* BUSINESS CHALLENGES */
         "challenge-eyebrow": "Business Challenges",
-        "challenge-title": "Helping Organizations Solve Complex Business Problems",
+        "challenge-title": "Helping People Solve Complex Business Problems",
         "challenge-text": "Applying advanced analytics, artificial intelligence and quantitative modelling to support strategic decisions.",
 
         "challenge-card1-category": "FINANCIAL SERVICES",
@@ -176,6 +176,14 @@ const translations = {
         "market6-item3":"Artificial Intelligence",
         "market6-item4":"Innovation",
 
+        "market7-category": "LEGAL & JUDICIAL SECTOR",
+        "market7-title":"Legal & Forensic Intelligence",
+        "market7-text": "Independent forensic auditing of judicial files to support legal strategy, uncover evidentiary gaps, adn detect methodological flaws in investigations",
+        "market7-item1":"Case File Audits",
+        "market7-item2":"Evidence Analytics",
+        "market7-item3":"Expert Reports",
+        "market7-item4":"Decision Support for Defense",
+
         /*ABOUT ME*/
         "about-eyebrow":"About Me",
         "about-title":"Bridging Business, Analytics and Artificial Intelligence",
@@ -230,23 +238,24 @@ const translations = {
         "footer-developed":"Designed, Developed & Powered by Erasmo Parraguez.",
     }, 
     es: {
-        "explore-solutions": "Explorar Soluciones",
+         "explore-solutions": "Explorar Soluciones",
         "schedule-meeting": "Agendar Reunión",
         "hero-eyebrow": "Inteligencia para la Toma de Decisiones",
-        "hero-title": "Ayudando a las organizaciones a tomar mejores decisiones.",
+        "hero-title": "Ayudando a las empresas a tomar mejores decisiones.",
         "hero-subtitle": "Inteligencia Artificial • Inteligencia para la Decisión • Analítica Cuantitativa",
         "hero-text": "Las organizaciones enfrentan desafíos analíticos cada vez más complejos. Las mejores decisiones requieren mucho más que tecnología. Requieren el enfoque analítico adecuado.",
-
-        "nav-solutions": "Soluciones",
-        "nav-experience": "Experiencia",
-        "nav-industries": "Mercados, Sectores & Investigación",
         
+        "nav-solutions": "Soluciones",
+        "nav-industries": "Industrias",
+        "nav-experience": "Experiencia",
+        "nav-insights": "Publicaciones",
         "nav-about": "Acerca de mi",
         "nav-contact": "Contacto",
         "schedule-meeting": "Agendar Reunión",
 
         "download-cv": "Descargar CV (PDF)",
         "industries-subtitle": "Servicios Financieros • Minería • Gobierno • Tecnología",
+        
         
         /* BUSINESS CHALLENGES */
         "challenge-card1-category": "SERVICIOS FINANCIEROS",
@@ -400,6 +409,14 @@ const translations = {
         "market6-item2":"Ciencias de la Decisión",
         "market6-item3":"Inteligencia Artificial",
         "market6-item4":"Innovación",
+
+        "market7-category": "SECTOR LEGAL Y JUDICIAL",
+        "market7-title":"Inteligencia Forense y Legal",
+        "market7-text": "Auditoría forense independiente de expedientes judiciales para respaldar la estrategia legal, descubrir vacíos probatorios y detectar fallas metodológicas.",
+        "market7-item1":"Auditoría de Carpetas",
+        "market7-item2":"Análisis Probatorio",
+        "market7-item3":"Peritajes Técnicos",
+        "market7-item4":"Apoyo Estrategico a Litigantes",
 
         /*ABOUT ME*/
         "about-eyebrow":"Acerca de mi",

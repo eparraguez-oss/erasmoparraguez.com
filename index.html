@@ -801,5 +801,47 @@
 <script src="js/language.js"></script>
 <script src="js/main.js"></script>
 <script src="js/contact.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Inicialización de Swiper -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        // Inicialización del carrusel de Markets (3 columnas)
+        const marketsSwiper = new Swiper('.markets-slider', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.markets-swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.markets-swiper-button-next',
+                prevEl: '.markets-swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 32,
+                }
+            }
+        });
+
+        // Re-renderizar iconos de Lucide por si se crearon dinámicamente
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    });
+    </script>
 </body>
 </html>

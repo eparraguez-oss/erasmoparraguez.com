@@ -77,7 +77,7 @@ const translations = {
         "capability4-item3": "Scenario Analysis", 
         "capability4-item4": "Strategic Planning",
 
-        "capability5-number":"05,
+        "capability5-number":"05",
         "capability5-title":"Forensic & Legal Evidence Analytics",
         "capability5-text":"Applying analytical discipline, data verification, and logical frameworks to audit investigative files, identify anomalies, and evaluate judicial evidence in complex legal proceedings.",
         "capability5-item1":"Investigative File Audit",

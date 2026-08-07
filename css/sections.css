@@ -220,24 +220,34 @@
     background: var(--color-white);
 }
 
+.capabilities-slider {
+    padding-bottom: 65px !important;
+    position: relative;
+    overflow: hidden; /* Oculta los slides fuera de vista */
+}
+
+.capabilities-slider .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
 .capability {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 80px;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.capability:first-of-type {
-    margin-top: 70px;
+/* En lugar de direction: rtl (que rompe Swiper), usamos orden visual */
+.capability-reverse .capability-image {
+    order: 1;
 }
 
-.capability:nth-child(even) {
-    direction: rtl;
-}
-
-.capability:nth-child(even) .capability-text {
-    direction: ltr;
+.capability-reverse .capability-text {
+    order: 2;
 }
 
 .capability-image {
@@ -248,13 +258,13 @@
 
 .capability-image img {
     width: 100%;
-    height: 500px;
+    height: 480px;
     object-fit: cover;
     transition: var(--transition-slow);
 }
 
 .capability:hover img {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .capability-text span {
@@ -294,26 +304,9 @@
     background: var(--color-accent);
 }
 
-/* Swiper Slider Adaptations */
-.capabilities-slider {
-    padding-bottom: 60px !important;
-    position: relative;
-}
-
-.capabilities-slider .swiper-slide {
-    height: auto;
-    display: flex;
-}
-
-.capabilities-slider .capability {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Custom Swiper Controls */
-.swiper-button-next, 
-.swiper-button-prev {
+/* Controles de Swiper para Capabilities */
+.cap-swiper-button-next, 
+.cap-swiper-button-prev {
     width: 48px !important;
     height: 48px !important;
     border-radius: 50%;
@@ -323,20 +316,14 @@
     transition: var(--transition);
 }
 
-.swiper-button-next::after, 
-.swiper-button-prev::after {
-    font-size: 1.2rem !important;
-    font-weight: bold;
-}
-
-.swiper-button-next:hover, 
-.swiper-button-prev:hover {
+.cap-swiper-button-next:hover, 
+.cap-swiper-button-prev:hover {
     background: var(--color-accent);
     color: var(--color-white) !important;
     transform: scale(1.08);
 }
 
-.swiper-pagination-bullet-active {
+.cap-swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--color-accent) !important;
     width: 24px !important;
     border-radius: 8px !important;

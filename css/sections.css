@@ -241,7 +241,6 @@
     margin-bottom: 0;
 }
 
-/* En lugar de direction: rtl (que rompe Swiper), usamos orden visual */
 .capability-reverse .capability-image {
     order: 1;
 }

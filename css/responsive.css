@@ -299,6 +299,22 @@ Version 1.1*/
     }
 }
 
+@media (max-width: 768px) {
+    .capabilities-slider,
+    .markets-slider {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* En celulares es mejor ocultar las flechas y dejar que el usuario use el dedo (swipe) */
+    .cap-swiper-button-next,
+    .cap-swiper-button-prev,
+    .markets-swiper-button-next,
+    .markets-swiper-button-prev {
+        display: none !important;
+    }
+}
+
 /*576px*/
 @media (max-width:576px){
     html{

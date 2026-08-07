@@ -77,6 +77,14 @@ const translations = {
         "capability4-item3": "Scenario Analysis", 
         "capability4-item4": "Strategic Planning",
 
+        "capability5-number":"05,
+        "capability5-title":"Forensic & Legal Evidence Analytics",
+        "capability5-text":"Applying analytical discipline, data verification, and logical frameworks to audit investigative files, identify anomalies, and evaluate judicial evidence in complex legal proceedings.",
+        "capability5-item1":"Investigative File Audit",
+        "capability5-item2":"Evidence & Anomaly Identification",
+        "capability5-item3":"Fact & Timeline Reconstruction",
+        "capability5-item4":"Expert Counter-Analysis Reports",
+
         /* SECTION: EXPERIENCE*/
         "experience-eyebrow": "Experience",
         "experience-title":"Experience Across Complex Business Environments",
@@ -311,6 +319,14 @@ const translations = {
         "capability4-item3":"Análisis de Escenarios",
         "capability4-item4":"Planificación Estratégica",
 
+        "capability5-number":"05,
+        "capability5-title":"Forensic & Legal Evidence Analytics",
+        "capability5-text":"Aplicar disciplina analítica, verificación de datos y marcos lógicos para auditar expedientes de investigación, identificar anomalías y evaluar pruebas judiciales en procedimientos legales complejos.",
+        "capability5-item1":"Investigative File Audit",
+        "capability5-item2":"Evidence & Anomaly Identification",
+        "capability5-item3":"Reconstrucción de hechos y cronología",
+        "capability5-item4":"Informes de contraanálisis de expertos",
+
         /* SECTION: EXPERIENCE*/
         "experience-eyebrow": "Experiencia",
         "experience-title":"Experiencia en Entornos Empresariales Complejos",
@@ -416,7 +432,7 @@ const translations = {
         "market7-item1":"Auditoría de Carpetas",
         "market7-item2":"Análisis Probatorio",
         "market7-item3":"Peritajes Técnicos",
-        "market7-item4":"Apoyo Estrategico a Litigantes",
+        "market7-item4":"Apoyo Estratégico a Litigantes",
 
         /*ABOUT ME*/
         "about-eyebrow":"Acerca de mi",

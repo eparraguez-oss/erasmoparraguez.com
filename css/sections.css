@@ -213,7 +213,7 @@
 
 
 /* ==========================================================================
-   STRATEGIC CAPABILITIES (CAROUSEL & GRID ENHANCED)
+   STRATEGIC CAPABILITIES
    ========================================================================== */
 
 .capabilities {
@@ -302,32 +302,6 @@
     border-radius: 50%;
     background: var(--color-accent);
 }
-
-/* Controles de Swiper para Capabilities */
-.cap-swiper-button-next, 
-.cap-swiper-button-prev {
-    width: 48px !important;
-    height: 48px !important;
-    border-radius: 50%;
-    background: var(--color-white);
-    color: var(--color-accent) !important;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
-}
-
-.cap-swiper-button-next:hover, 
-.cap-swiper-button-prev:hover {
-    background: var(--color-accent);
-    color: var(--color-white) !important;
-    transform: scale(1.08);
-}
-
-.cap-swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--color-accent) !important;
-    width: 24px !important;
-    border-radius: 8px !important;
-}
-
 
 /* ==========================================================================
    MARKETS, INDUSTRIES & RESEARCH

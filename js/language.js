@@ -321,11 +321,11 @@ const translations = {
 
         "capability5-number":"05",
         "capability5-title":"Forensic & Legal Evidence Analytics",
-        "capability5-text":"Aplicar disciplina analítica, verificación de datos y marcos lógicos para auditar expedientes de investigación, identificar anomalías y evaluar pruebas judiciales en procedimientos legales complejos.",
-        "capability5-item1":"Investigative File Audit",
-        "capability5-item2":"Evidence & Anomaly Identification",
-        "capability5-item3":"Reconstrucción de hechos y cronología",
-        "capability5-item4":"Informes de contraanálisis de expertos",
+        "capability5-text":"Aplicar métodos analíticos, rigor cuantitativo y razonamiento estructurado para auditar carpetas investigativas, identificar anomalías en los hechos y evaluar evidencia en entornos legales complejos.",
+        "capability5-item1":"Auditoría Forense de Carpetas Investigativas",
+        "capability5-item2":"Identificación de Anomalías y Sesgos Probatorios",
+        "capability5-item3":"Reconstrucción Lógica y Cronológica de Hechos",
+        "capability5-item4":"Informes Técnicos y Peritaje de Contrapeso",
 
         /* SECTION: EXPERIENCE*/
         "experience-eyebrow": "Experiencia",

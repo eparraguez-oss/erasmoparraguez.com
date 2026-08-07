@@ -438,47 +438,18 @@
 }
 
 /*ESTILOS UNIFICADOS DE SWIPER (CAPABILITIES & MARKETS)*/
-/* 1. Definición del círculo contenedor */
-.swiper-button-next,
-.swiper-button-prev,
-.cap-swiper-button-next,
-.cap-swiper-button-prev,
-.markets-swiper-button-next,
-.markets-swiper-button-prev {
-    width: 44px !important;
-    height: 44px !important;
-    margin-top: -22px !important; /* Centrado vertical perfecto */
-    border-radius: 50% !important;
-    background-color: var(--color-white) !important;
-    color: var(--color-accent) !important;
-    border: 1px solid rgba(37, 99, 235, 0.15) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.3s ease !important;
-    z-index: 10 !important;
-}
-
-/* 2. Ajuste de la flecha interna */
-.swiper-button-next::after,
-.swiper-button-prev::after,
-.cap-swiper-button-next::after,
-.cap-swiper-button-prev::after,
-.markets-swiper-button-next::after,
-.markets-swiper-button-prev::after {
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    line-height: 1 !important;
-}
-
-/* 3. Posicionamiento lateral y margen */
+/* 1. Espaciado contenedor para evitar que los botones tapen el texto */
 .capabilities-slider,
 .markets-slider {
-    padding-left: 55px !important;
-    padding-right: 55px !important;
+    position: relative;
+    overflow: hidden;
+    /* Damos espacio a los lados para que quepan las flechas */
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    padding-bottom: 65px !important;
 }
 
+/* 2. Posicionamiento exterior de los botones */
 .cap-swiper-button-prev,
 .markets-swiper-button-prev {
     left: 5px !important;
@@ -489,21 +460,41 @@
     right: 5px !important;
 }
 
-/* 4. Estado Hover (al pasar el cursor) */
-.swiper-button-next:hover,
-.swiper-button-prev:hover,
+/* 3. Estilo visual unificado para ambas secciones */
+.cap-swiper-button-next,
+.cap-swiper-button-prev,
+.markets-swiper-button-next,
+.markets-swiper-button-prev {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    background: var(--color-white) !important;
+    color: var(--color-accent) !important;
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.cap-swiper-button-next::after,
+.cap-swiper-button-prev::after,
+.markets-swiper-button-next::after,
+.markets-swiper-button-prev::after {
+    font-size: 1rem !important;
+    font-weight: 700;
+}
+
+/* Hover de botones */
 .cap-swiper-button-next:hover,
 .cap-swiper-button-prev:hover,
 .markets-swiper-button-next:hover,
 .markets-swiper-button-prev:hover {
-    background-color: var(--color-accent) !important;
+    background: var(--color-accent) !important;
     color: var(--color-white) !important;
-    border-color: var(--color-accent) !important;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
     transform: translateY(-2px);
 }
 
-/* 5. Estilo unificado de la paginación (dots) */
+/* 4. Estilo unificado para los Puntos de Paginación */
 .cap-swiper-pagination .swiper-pagination-bullet-active,
 .markets-swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--color-accent) !important;
